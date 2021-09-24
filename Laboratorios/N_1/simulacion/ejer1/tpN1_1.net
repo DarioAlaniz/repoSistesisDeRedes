@@ -1,0 +1,25 @@
+* D:\dario\cuarto\sintesis de redes\Laboratorios\N_1\simulacion\tpN1.asc
+XU1 Vin1 N001 vcc vss Vo1 LM324
+R1 Vo1 N001 {R}
+R2 N001 0 {R}
+R3 N002 Vo1 {R}
+R4 N002 N001 {R}
+R5 Vo2 N002 {R}
+XU2 Vin2 N002 vcc vss Vo2 LM324
+V1 Vin1 0 SINE(0 {V_1} 1k) AC {V_1}
+V2 Vin2 0 SINE(0 {V_2} 1k) AC {V_2}
+V3 vcc 0 10
+V4 0 vss 10
+V5 N003 Vc SINE(0 1 1k) AC .5
+V6 Vc N004 SINE(0 1 1k) AC .5
+V7 Vc 0 SINE(0 1 1k) AC 5
+.lib "D:\dario\cuarto\sintesis de redes\Laboratorios\LM324.lib.txt"
+.param R = 1k
+.param V_1=0
+.param V_2=1
+.ac dec 30 .1 100Meg
+* .STEP PARAM V_1 0 1 1
+* .STEP PARAM V_2 1 0 1
+; Simulation settings
+.backanno
+.end

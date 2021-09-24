@@ -1,3 +1,6 @@
+# esta scrip se encarga de extrer los datos de un .txt de un analisis en frecuencia por ltspice
+# fue pensado antes de saber que estaba la libreria "PyLTSpice" https://pyltspice.readthedocs.io/en/latest/ 
+
 def abrir_datos (): # nombre , alias , correo
     " Abrir un archivo que tiene guardada la info [ key ], [ Val[0]] ,[ Val [1] ... ]"
     vec =[]

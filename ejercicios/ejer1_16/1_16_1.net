@@ -1,0 +1,22 @@
+* D:\dario\cuarto\sintesis de redes\repoSistesisDeRedes\ejercicios\ejer1_16\1_16.asc
+XU1 0 N001 Vcc Vss Vo LM324
+D1 Vin N004 BZX84C8V2L
+D3 N001 N002 1N750
+D5 N005 N004 BZX84C8V2L
+D2 N003 N002 1N750
+R2 N001 Vo {R}
+R1 N003 Vo {R}
+R3 N005 N001 {R}
+R4 Vin N001 {R}
+V1 Vin 0 SINE(0 {Vin} 1k) AC 1
+V3 Vcc 0 10
+V2 0 Vss 10
+.model D D
+.lib C:\Users\PC\Documents\LTspiceXVII\lib\cmp\standard.dio
+.lib "D:\dario\cuarto\sintesis de redes\repoSistesisDeRedes\Laboratorios\LM324.lib.txt"
+.tran 0 10m 0 0.01m
+.PARAM R=10000  ; Batch instruction
+.PARAM Vin=20  ; Batch instruction
+; Simulation settings
+.backanno
+.end

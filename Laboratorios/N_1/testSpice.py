@@ -1,3 +1,9 @@
+# este scrip esta pensado para tirar simulaciones desde python y 
+# obtener las salidas o todo tipo de medicion para 
+# operar desde python(graficar, realizar operaciones matematicas, etc)
+# se hace uso de la libreria "PyLTSpice" https://pyltspice.readthedocs.io/en/latest/ 
+
+
 import matplotlib.pyplot as plt 
 import numpy as np
 import PyLTSpice.LTSpice_RawRead as sp

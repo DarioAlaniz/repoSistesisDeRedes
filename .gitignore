@@ -127,6 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
 info/
-N_1/dataTxt
-N_1/simulacion
